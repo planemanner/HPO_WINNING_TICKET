@@ -14,4 +14,4 @@
     - However, I will update the explanation of each args in main.py soon
 
 # Contact
-  - Anybody wants help for this repository, send an e-mail on smddls77@gmail.com or leave issue  
+  - Anybody wants help for this repository, send an e-mail on smddls77@gmail.com or leave an issue  
