@@ -1,4 +1,4 @@
-[# Introduction
+# Introduction
   - This Repository is implementation of [Hyperparameter Optimization with Neural Network Pruning](https://scholar.google.com/citations?view_op=view_citation&hl=ko&user=PywlW4gAAAAJ&citation_for_view=PywlW4gAAAAJ:IjCSPb-OGe4C)
   - This paper claims that any pruned neural network can produce a hyperparameter set which show similar performance with original neural network.
   - **You can find a compromising result which shows we do not use original neural network itself to obtain optimal hyperparameters**
