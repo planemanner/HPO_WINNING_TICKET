@@ -43,10 +43,9 @@ if __name__ == "__main__":
     parser.add_argument("--eval_period", type=int, default=1)
     parser.add_argument("--eval_freq", type=int, default=50)
     parser.add_argument('--no_prune', action='store_true')
-    parser.add_argument('--model_dir', type=str, default="./model_ckpts/base",
+    parser.add_argument('--model_dir', type=str, default="./",
                         help="The directory of saving a pruned model's weight")
     parser.add_argument('--network_name', type=str, default="resnet56")
-    parser.add_argument('--model_path', type=str, default="")
     parser.add_argument('--dataset_name', type=str, default="CIFAR100", choices=["CIFAR100", "TinyImageNet", "MNIST"])
     parser.add_argument('--model_name', type=str, default='resnet', choices=AVAILABLE_MODEL_NAMES)
 
@@ -55,7 +54,8 @@ if __name__ == "__main__":
     args.job_name = args.job_name + "_seed_" + str(args.seed) + "_pruning_rate_" + str(args.percentile)
 
     train_dataset, val_dataset = call_dataset(dataset_name=args.dataset_name,
-                                              root_path=args.dataset_dir)
+                                              root_path=args.dataset_dir,
+                                              download=True)
 
     if args.no_prune:
         model_args = get_model_args(model_name=args.model_name,

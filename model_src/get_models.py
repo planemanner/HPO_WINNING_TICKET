@@ -31,6 +31,6 @@ def get_model_args(model_name, input_image_channels, num_classes) -> dict:
     args = {"num_classes": num_classes,
             "input_image_channels": input_image_channels}
     if model_name == "resnet":
-        args["depth"] = 56,
+        args["depth"] = 56
         args["block_name"] = "BasicBlock"
     return args
