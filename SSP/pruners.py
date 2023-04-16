@@ -1,4 +1,4 @@
-from pruning_utils import *
+from SSP.pruning_utils import *
 import torch
 import sys
 sys.path.append('..')
