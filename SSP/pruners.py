@@ -62,7 +62,8 @@ class ResNet_Pruner(Default_Pruner):
             raise AssertionError("Invalid block type of resnet")
 
         self.blocks, self.others = block_parser(self.model, block)
-        # (1596996008.0, 3413446.0) / (434407936.0, 135088392.0)
+
+
     def scoring(self, dataloader):
         # Channel-wise scoring
         data, labels = next(iter(dataloader))

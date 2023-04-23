@@ -7,6 +7,12 @@
 # Done
   - Minor bugs are fixed.
 
+# Note
+  - Actually, I recommend you to just reduce the number of channels for each layer of a neural network.
+    - Unfortunately, you would require hard-coded version of pruning when if you use one-shot structured pruning depending on the structure of neural network.
+    - If you know some more pretty method, please leave that method in git-issue. 
+  - It is much more simple and produces a slim version of a neural network that can be compatible with structured operations provided by Nvidia.
+
 # Requirements
   - pytorch  >= 1.6
   - torchvision >= 0.7.0

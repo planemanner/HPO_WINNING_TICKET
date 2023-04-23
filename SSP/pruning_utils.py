@@ -12,8 +12,7 @@ class get_parsed_weight:
         old_out_dim, old_in_dim = weight.shape
         new_out_dim, new_in_dim = len(out_channel_indices), len(in_channel_indices)
 
-        in_channel_mask, out_channel_mask = torch.zeros_like(weight, device=weight.device), torch.zeros_like(weight,
-                                                                                                             device=weight.device)
+        in_channel_mask, out_channel_mask = torch.zeros_like(weight, device=weight.device), torch.zeros_like(weight, device=weight.device)
 
         in_channel_indices = in_channel_indices.contiguous().repeat(old_out_dim).view(old_out_dim,
                                                                                       new_in_dim)
