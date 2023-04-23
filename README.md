@@ -27,7 +27,7 @@
     python main.py --model_dir [where_to_your_pruned_model_ckpt]
     ```
 # Reference
-  - If you prepare TinyImageNet dataset in this [link](https://www.kaggle.com/c/tiny-imagenet)
+  - You can prepare TinyImageNet dataset in this [link](https://www.kaggle.com/c/tiny-imagenet)
 
 # Contact
   - Anybody wants help for this repository, send an e-mail on smddls77@gmail.com or leave an issue  ]()
