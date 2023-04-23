@@ -108,6 +108,7 @@ def call_dataset(dataset_name: str, root_path: str, download=False):
     elif dataset_name == "MNIST":
         train_set = MNIST(root=root_path, train=True, transform=train_transform, download=download)
         test_set = MNIST(root=root_path, train=False, transform=test_transform, download=download)
+
     elif dataset_name == "STL10":
         train_set = STL10(root=root_path, split="train", transform=train_transform, download=download)
         test_set = STL10(root=root_path, split="test", transform=test_transform, download=download)
